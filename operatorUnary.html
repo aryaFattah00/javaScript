@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Unary</title>
+    <style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <h2>Operator Unary</h2>
+        <tr>
+            <th>Operator</th>
+            <th>Keterangan</th>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>Menandakan nilai positif</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>Menandakan nilai negatif</td>
+        </tr>
+        <tr>
+            <td>++</td>
+            <td>Increment,menaikan 1 angka</td>
+        </tr>
+        <tr>
+            <td>--</td>
+            <td>Decrement,mennurunkan 1 angka</td>
+        </tr>
+        
+    </table>
+
+    <script>
+        let result = + 1;
+        document.writeln("<p>" + result + "<P>")
+
+        result--;
+        document.writeln("<p>" + result + "<p>")
+
+        result++;
+        document.writeln("<p>" + result + "<p>")
+
+        result = - result;
+        document.writeln("<p>" + result + "<p>")
+    </script>
+</body>
+</html>

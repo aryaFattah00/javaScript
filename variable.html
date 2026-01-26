@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable = var,let,cons</title>
+</head>
+<body>
+    <script>
+        var fullName;
+        var firstName;
+        var middleName;
+        var lastName;
+
+        // mengubah value divariable
+
+        fullName = "Abdul Mofu Mofu";
+        firstName = "Abdul";
+        middleName = "Mofu";
+        lastName = "Mofu";
+
+        // membuat variable langsung dengan value   
+        var firstName = "Abdul";
+        var middleName = "Mofu";
+        var lastName = "Mofu";
+        var fullName1 = "Abdul" + " " + " Mofu" + " " + "Mofu";
+        var sapaan = "Suramat Pagi!"
+
+        // mengakses variable
+        document.writeln(fullName1);
+        document.writeln("<br>")
+        document.writeln(firstName);
+        document.writeln("<br>")
+        document.write(sapaan)
+        document.writeln("<br>")
+        document.writeln("<br>")
+        
+
+        document.writeln( "kata kunci let dan cost");
+        document.writeln("<br>");
+        document.writeln ("penggunaan variel var sekarang diganti dengan let");
+
+        document.writeln("<br>")
+        let firstName2 = "Abdul";
+        let middleName2 = "Mofu";
+        let lastName2 = "Mofu";
+        let fullName2 = "Abdul" + " " + " Mofu" + " " + "Mofu";
+
+        document.writeln("<br>");
+        document.writeln(firstName2);
+        document.writeln("<br>");
+        document.writeln(middleName2);
+        document.writeln("<br>");
+        document.writeln(lastName2);
+        document.writeln("<br>");
+        document.writeln(fullName2)
+        document.writeln("<br>");
+
+        document.writeln("kata kunci const/cosntant");
+        document.writeln("<br>");
+        document.writeln("ketika variable sudah disi dengan const,maka variable tsb tidak bisa diubah lagi valuenya");
+
+        const application = "Belajar javaScript dasar ";
+        application = "gak mau belajar";  // error bisa dilhat lewat inspect -> console
+        document.writeln("<br>");
+        document.writeln(application)
+    </script>
+</body>
+</html>
