@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+<body>
+    <ul>
+        <h1>String Template</h1>
+        <li>Kita sudah tahu bahwa untuk menambahkan string dengan data lain, kita bisa menggunakan operator + (plus)</li>
+        <li>Namun pada kasus tertentu, penggunaan operator + (plus) sangat menyulitkan, apalagi jika dalam jumlah banyak</li>
+        <li>JavaScript memiliki fitur yang bernama String Template, dimana kita bisa mensubtitusi data dari luar String ke dalam String, seperti mengambil data variable, atau bahkan melakukan operasi matematika</li>
+        <li>Untuk menggunakan String Template, cara pembuatan String nya harus menggunakan (backtick), bukan' (petik satu) atau" (petik dua)</li>
+    </ul>
+
+    <script>
+
+        const name = "Abdul Mofu Mofu";
+        const value = 80;
+        const fisrtName ="Abdul";
+        const middleName ="Mofu";
+        const lastName ="Mofu";
+        const alamat = "JL Ngawi Timur";
+
+        const Template =`Name : ${name} `;          // cara baru yang lebih simpel
+
+        const baru =`Name : ${fisrtName} ${middleName} ${lastName}`;
+
+        // const lama ="Name :" + fisrtName + " " + middletName + " " + lastName ;  //cara lama
+        const TemplateAlamat =`Alamat : ${alamat} `; 
+
+        console.info(Template)
+        console.info(TemplateAlamat)
+        console.info(baru);
+        // console.info(lama)
+
+        // melakukan perbandingan/ekspression di string template
+        const template2 = `Name : ${name}, Apakah Lulus? : ${value>75}`;
+        console.info(template2)
+
+        // Multiline String
+        const multiLine=`Nama saya abdul mofu mofu,
+saya tinggal di Jl Ngawi timur,
+hobi saya adalah scroll fesnuk,
+cita-cita saya jadi programer handal namun enggan ngodofff`
+
+        document.writeln("Cara Pakai multiline pakai backtic")
+        document.writeln("<pre>")
+        document.writeln(multiLine)
+        document.writeln("<pre>")
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Perbandingan</title>
+    <style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <h2>Operator Perbandingan</h2>
+        <tr>
+            <th>Operator</th>
+            <th>Keterangan</th>
+        </tr>
+        <tr>
+            <td>></td>
+            <td>Lebih Dari</td>
+        </tr>
+        <tr>
+            <td><</td>
+            <td>Kurang Dari</td>
+        </tr>
+        <tr>
+            <td>>=</td>
+            <td>Lebih dari sama dengan</td>
+        </tr>
+        <tr>
+            <td>==</td>
+            <td>Sama dengan</td>
+        </tr>
+        <tr>
+            <td>===</td>
+            <td>sama dengan dan sama tipe</td>
+        </tr>
+        <tr>
+            <td>!=</td>
+            <td>Tidak sama dengan</td>
+        </tr>
+        <tr>
+            <td>!===</td>
+            <td>Tidak sama dengan dan tidak sama tipe</td>
+        </tr>
+        
+    </table>
+    <script>
+        let result = 5 =="5";
+        document.writeln("<p>" + result + "<p>");
+
+        result = 5 ==="5";
+        document.writeln("<p>" + result + "<p>")
+        result = 5 > 10;
+        document.writeln("<p>" + result + "<p>")
+        result = 5 < 10;
+        document.writeln("<p>" + result + "<p>")
+    </script>
+</body>
+</html>

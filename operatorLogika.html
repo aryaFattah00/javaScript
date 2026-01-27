@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika</title>
+
+        <style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+    </style>
+</head>
+<body>
+    <div>
+    <table>
+        <h2>Operator Logika</h2>
+        <tr>
+            <th>Operator</th>
+            <th>Keterangan</th>
+        </tr>
+        <tr>
+            <td>&&</td>
+            <td>Dan</td>
+        </tr>
+        <tr>
+            <td>||</td>
+            <td>Atau</td>
+        </tr>
+        <tr>
+            <td>>!</td>
+            <td>Kebalika</td>
+        </tr>
+    </table>
+    </div>
+    <div>
+         <table>
+        <h2>Operator &&</h2>
+        <tr>
+            <th>Nilai 1</th>
+            <th>Operator</th>
+            <th>Nilai 2</th>
+            <th>Hasil</th>
+        </tr>
+        <tr>
+            <td>true</td>
+            <td>&&</td>
+            <td>true</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>true</td>
+            <td>&&</td>
+            <td>false</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <td>false</td>
+            <td>&&</td>
+            <td>true</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <td>false</td>
+            <td>&&</td>
+            <td>false</td>
+            <td>false</td>
+        </tr>
+    </table>
+    <div>
+        <table>
+        <h2>Operator ||</h2>
+        <tr>
+            <th>Nilai 1</th>
+            <th>Operator</th>
+            <th>Nilai 2</th>
+            <th>Hasil</th>
+        </tr>
+        <tr>
+            <td>true</td>
+            <td>||</td>
+            <td>true</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>true</td>
+            <td>||</td>
+            <td>false</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>false</td>
+            <td>||</td>
+            <td>true</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>false</td>
+            <td>||</td>
+            <td>false</td>
+            <td>false</td>
+        </tr>
+    </table>
+    </div>
+    <div>
+        <table>
+        <h2>Operator unary !</h2>
+        <tr>
+            <th>Operator</th>
+            <th>Nilai 2</th>
+            <th>Hasil</th>
+        </tr>
+        <tr>
+            <td>!</td>
+            <td>ture</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <td>!</td>
+            <td>false</td>
+            <td>true</td>
+        </tr>
+        </table>
+    </div>
+    </div>
+    <script>
+        const nilaiUjian = 70;
+        const nilaiAbsensi = 80;
+
+        const lulusUjian = nilaiUjian > 75;
+        document.writeln(lulusUjian);
+
+        const lulusAbsensi = nilaiAbsensi > 75;
+        document.writeln(lulusAbsensi)
+
+        const lulus= lulusUjian && lulusAbsensi
+        document.writeln(lulus)
+    </script>
+</body>
+</html>

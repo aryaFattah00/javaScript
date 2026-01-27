@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+
+    
+    <style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <h2>Tipe Data array</h2>
+        <li>array adalah tipe data yang berisikan kkumpulan data</li>
+        <li>array di javaScript memiliki sifat dinamis, artinya datanyabisa bertambah dengan sendiri saat kita memasukkan data ke dalam array</li>
+    </ul>
+    <ul>
+        <h2>Tipe Data array</h2>
+        <li>array adalah tipe data yang berisikan kkumpulan data</li>
+        <li>array di javaScript memiliki sifat dinamis, artinya datanyabisa bertambah dengan sendiri saat kita memasukkan data ke dalam array</li>
+    </ul>
+
+        <table>
+        <h1>operasi di Array</h1>
+        <tr>
+            <th>Operasi</th>
+            <th>Keterangan</th>
+        </tr>
+        <tr>
+            <td>array.push(value)</td>
+            <td>menambah data ke array</td>
+        </tr>
+        <tr>
+            <td>array.length</td>
+            <td>untuk mendapatkan panjangg Array</td>
+        </tr>
+        <tr>
+            <td>array[index]</td>
+            <td>mendapat data di posisi panjang array</td>
+        </tr>
+        <tr>
+            <td>array[index] = value</td>
+            <td>mengubah data di posisi index </td>
+        </tr>
+        <tr>
+            <td>delete array[index] = value</td>
+            <td>menghapus data di posisi index, namun index tidak bergeser </td>
+        </tr>
+    </table>
+    <h2>perlu di ingat jika kita bisa memasukkan Array ke dalam Array jika kita mau/ disebut multi dimensional array </h2> 
+    <script>
+        let arrayKosong = [];
+        let arrayNama = ["Mahmud","Abdul","Mofu"];
+        document.writeln(arrayNama)
+
+        // cara memanbah data pada array
+        const names = [];
+        names.push("Boku");
+        names.push("Sanji","Sanford","karltzy");
+        names.push("Jaype","Oheb");
+        names.push("Aizawa")
+
+
+        console.table(names)
+        console.info(names.length)
+
+        //kode operasi di array cari data berdasarkan index
+        console.info(names[0]);
+        console.info(names[1]);
+        console.info(names[5]);
+
+        // kode operasi mengganti data berdasarkan index
+        names[0]="YukiTzy"
+        console.table(names)
+
+        // hapus data array menggunkan index
+        delete names[6];
+        delete names[0];
+        console.table(names)
+
+        //multi demnsional Array
+        names.push(["Light","Edward","Demonkite"])
+        console.table(names)
+
+
+
+    </script>
+</body>
+</html>
