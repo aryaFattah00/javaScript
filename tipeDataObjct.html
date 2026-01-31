@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Objct</title>
+</head>
+<body>
+    <ul>
+        <h1>Associative Array</h1>
+        <li>Di bahasa pemrograman lain seperti PHP, kita bisa menggunakan index beruba tipe data lain selain number, misal string</li>
+        <li>Fitur ini biasanya disebut associative array atau hash</li>
+        <li>Di JavaScript associative array tidak didukung.</li>
+        <li>Jika kita memaksa memasukkan data bukan number di index Array, maka JavaScript akan merubah tipe data Array tersebut menjadi object, dan ini bisa berbahaya, karena beberapa operasi di array mungkin bisa berubah hasilnya</li>
+    </ul>
+    <ul>
+        <h1>Tipe Data Object</h1>
+        <li>Tipe data objcet adalaj tipe data yang mirip dengan tipe data array</li>
+        <li>yang membedakan adalah index padatipe data object bisa menggunakan string</li>
+        <li>index di object bisanya disebut attributes atau properties,bukan index</li>
+    </l>
+    <script>
+        const  person = {};
+
+        //menmabah atau mengubah
+        person["nama"] = "Adbul mahmud";
+        person["alamat"] = "Indonesia";
+        person["umur"] = 30;
+
+        //menghapus
+        // delete person["umur"]
+
+        console.table(person);
+    </script>
+
+
+    // Membuat object dengan properties
+    <script>
+        const orang={
+            nama: "Abdul",
+            alamat: "Indonesia",
+            umur: 30
+        }
+
+        console.table(orang)
+    </script>
+
+
+    //Kode: Mengakses properrty object (lebih disarankan menggunkana metode ini)
+    <script>
+        const data={
+            nama: "Mamud",
+            alamat: "Indonesia",
+            umur: 40
+        };
+
+        console.info(`nama : ${data.nama}`);
+        console.info(`alamat : ${data.alamat}`);
+        console.info(`umur : ${data.umur}`);
+    </script>
+</body>
+</html>   

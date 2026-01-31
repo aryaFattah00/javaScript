@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefiend</title>
+</head>
+<body>
+    <ul>
+        <h1>Undefiend Variable</h1>
+        <li>Undefined adalah sebuah kata kunci di javaScript</li>
+        <li>Undefined adalah sebuah tipe data</li>
+        <li>sebuah variable yanng belum ditambahkan nilai, maka artinya variable tersebut merupakan tipe undefiend</li>
+        <li>Kadang untuk programmer javaScript pemula undefiend ini memang agak sedikit membingungkan</li>
+        <li>undefiend itu berbeda dengan null di bahasa pemrograman lainnya</li>
+    </ul>
+    <script>
+        // let name = "adbul";
+        let name;
+
+        if (name === undefined){
+            alert("UNDEFIEND");
+        }else{
+            alert("DEFIEND");
+        }
+    </script>
+
+
+    <!-- Undefiend array value -->
+    <script>
+        const nama = ["Abdul","Mofu"]
+        
+        if (nama[2] === undefined){
+            console.info("ARRAY UNDEFIEND");
+        }else{
+            console.info("ARRAY DEFIEND");
+        }
+
+    </script>
+
+    <!-- Undefiend Object Property -->
+    <script>
+        const person = {};
+        if(person.name === undefined){
+            console.info("OBJECT UNDEFIEND")
+        }else{
+            console.info("OBJECT DEFIEND")
+        }
+    </script>
+</body>
+</html>

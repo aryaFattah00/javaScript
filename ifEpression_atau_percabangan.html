@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan If atau  Else</title>
+</head>
+<body>
+    <ul>
+        <h1>If Percabangan</h1>
+        <li>Dalam JavaScript, if adalah salah satu kata kunci yang digunakan untuk percabangan</li>
+        <li>Percabangan artinya kita bisa mengeksekusi kode program tertentu ketika suatu kondisi terpenuhi</li>
+        <li>Hampir di semua bahasa pemrograman mendukung if expression</li>
+    </ul>
+
+    <ul>
+        <h1>Else Percabangan</h1>
+        <li>Blok if akan dieksekusi ketikaif bernilai true</li>
+        <li>kadang kita ingin melakukan eksekusi program tertentu jika kondisi  if bernilai false</li>
+        <li>hal iini bisa dilakukan menggunkan else exspressin</li>
+    </ul>
+    <ul>
+        <h1>Else If Percabangan</h1>
+        <li>Kadang dalam if, kita butuh membuat beberapa kondisi</li>
+        <li>Kasus sperti ini, di javaScript kita bisa menggunakan Else if expression</li>
+    </ul>
+
+    <script>
+        const nilaiUjian = 12;
+
+        if(nilaiUjian>=81){
+            document.writeln(`Nilai anda adalah: ${nilaiUjian} maka hasilnya A`);
+        }
+        else if(nilaiUjian>=61){
+            document.writeln(`Nilai anda adalah: ${nilaiUjian} maka hasilnya B`);
+        }
+        else if(nilaiUjian>=41){
+            document.writeln(`Nilai anda adalah: ${nilaiUjian} maka hasilnya C`);
+        }
+        else if(nilaiUjian>=21){
+            document.writeln(`Nilai anda adalah: ${nilaiUjian} maka hasilnya D`);
+        }
+        else{
+            document.writeln(`Nilai anda adalah: ${nilaiUjian} Maka hasilnya Try again next time`);
+        }
+    </script>
+</body>
+</html>

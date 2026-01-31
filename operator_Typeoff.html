@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Typeof</title>
+    <style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <h1>Operator Typeof</h1>
+        <li>typeof merupakan operator yang bisa kita gunakan untuk melihat tipe data sebuah value atau variable</li>
+        <li>Karena JavaScript merupakan dynamic langauge, jadi kadang kita perlu mengecek tipe data sebuah value atau variable menggunakan operator typeof</li>
+        <li>Hasil dari operator typeof adalah string tipe datanya</li>
+    </ul>
+
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Hasil Operator typeof</th>
+        </tr>
+        <tr>
+            <td>Undefiend</td>
+            <td>"undefiend"</td>
+        </tr>
+        <tr>
+            <td>Null</td>
+            <td>"object"</td>
+        </tr>
+        <tr>
+            <td>Boolean</td>
+            <td>"boolean"</td>
+        </tr>
+        <tr>
+            <td>Number</td>
+            <td>"number"</td>
+        </tr>
+        <tr>
+            <td>BitInt</td>
+            <td>"bigint"</td>
+        </tr>
+        <tr>
+            <td>String</td>
+            <td>"string"</td>
+        </tr>
+        <tr>
+            <td>Symbol</td>
+            <td>"symbol"</td>
+        </tr>
+        <tr>
+            <td>Function</td>
+            <td>"function"</td>
+        </tr>
+        <tr>
+            <td>Lainnya</td>
+            <td>"object"</td>
+        </tr>
+    </table>
+
+
+    <!-- Kode Operator Typeof -->
+    <script>
+        let data = 30;
+        const typedata = typeof data;
+        document.writeln(`<p>${typedata}`)
+    </script>
+</body>
+</html>
