@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Chaining</title>
+</head>
+<body>
+    <ul>
+        <h1>Optional Chaining</h1>
+        <li>Optional chining operator (?) meruoaakan operator ynsg digunakanuntuk mengamankan ketika kita ingin mengakses property sebuah object dari data nullish</li>
+        <li>jika kita mencoba mengkases property dari sebuah object dari data nullish tanpa menggunakan optional chaining, maka akan terjadi error</li>
+    </ul>
+<!-- 
+    <script>
+        let person ={};
+        const country = person.addres.country;
+        document.writeln(`<p>${country}`)
+    </script> -->
+
+
+    <!-- kode pengecekan menggunkan if -->
+    <!-- <script>
+        let orang ={};
+        let negara;
+
+        if(orang.addres !== undefined && orang.addres !== null){
+            negara = orang.addres.country;
+        }
+        document.writeln(`<p>${negara}`)
+    </script> -->
+
+    <script>
+        const orang ={
+            alamat: {
+                negara : "Indonesia"
+            }
+        };
+
+        let alamat = orang?.alamat?.negara;
+
+        document.writeln(`<p>${alamat}`)
+    </script>
+</body>
+</html>
