@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Statment</title>
+</head>
+<body>
+    <ul>
+        <h1>With Statment</h1>
+        <li>With statment merupakan fitur yang digunakan untuk menurunkan sebuah scope data</li>
+        <li>Dengan menggunakan with statment, kita bisa mengkases property dalam sebuah data tanpa harus menyebut datanya</li>
+    </ul>
+
+    <ul>
+        <h1>With Statment Tidal Direkomendasikan</h1>
+        <li>Walaupun fitur with statment sangat menarik</li>
+        <li>Nmaun Kebanyakan orang tidak merekomendasikan penggunaan with statment</li>
+        <li>Hal ini dikarenakan with statment kadang membuat sebuah kode menjadi ambigu</li>
+    </ul>
+
+
+    <!-- Kode tanpa with statment -->
+    <script>
+        const person ={
+            firstName: "Ayeee",
+            middleName: "Huhahaha",
+            lastName: "Heheha",
+        }
+
+        console.log(person.firstName);
+        console.log(person.middleName);
+        console.log(person.lastName);
+    </script>
+
+    <!-- Kode dengan with statment -->
+     <script>
+        const namaOrang = {
+            firstName: "Ayeee",
+            middleName: "Huhahaha",
+            lastName: "Heheha",
+        }
+
+        with(namaOrang){
+            console.info(firstName);
+            console.info(middleName);
+            console.info(lastName);
+        }
+     </script>
+</body>
+</html>

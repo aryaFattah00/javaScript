@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <ul>
+        <h1>For Loop</h1>
+        <li>For adalah salah satu kata kunci yang bisa digunakan melakkukan perulangan</li>
+        <li>Blok kode yang terdapat di dalam for akan selalu diulangi selama kondisi for terpenuhi </li>
+    </ul>
+    <ul>
+        <h1>Sintak Perulangan For</h1>
+        <h2>for init statment; Kondisi; post statment{</h2>
+        <h2>//block perulangan</h2>
+        <h2>}</h2>
+
+        <li>init statment akan dieksekusi hanya sekali di awal sebelum perulangan</li>
+        <li>Kondisi akan dilakukan pengecekkkan dalam setiap perulangan, jika true perulangan akan dilakukan, jika false perulangan akan berhenti</li>
+        <li>post statment akan dieksekusi setiap kali diakhir perulangan</li>
+        <li>init statment, kondisi dan Post statment tidak wajib diisi, jika kondisi tidak di isi, berarti kondisi selalu bernilai true</li>
+    </ul>
+
+    <script>
+        let counter = 5;
+
+        for (;counter <= 10;){
+            document.writeln(`<p>Perulangan ke ${counter}`)
+                counter++;
+        }
+    </script>
+    <!-- Cara Yang lebih mudah -->
+     <script>
+        for(let angka = 1;angka <=10;){
+            document.writeln(`<p>Perulangan ke ${angka}`)
+                angka++;
+        }
+     </script>
+
+
+     <!--Kode Perulangan Dengan Post Statment  -->
+    <script>
+        for (let nilai = 1; nilai <=10; nilai++){
+            document.writeln(`<p>Niali Perulangan Ke ${nilai}`)
+        }
+
+    </script>  
+</body>
+</html>
