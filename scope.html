@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <ul>
+        <h1>Scope</h1>
+        <li>Scope merupakan area akses sebuah data</li>
+        <li>Ada dua jenis scope, global scope dan local scope.</li>
+        <li>Setiap kita membuat function, maka kita akan membuat local scope untuk function tersebut</li>
+        <li>Data di global scope bisa diakses dari local scope, namun data di local scope hanya bisa di akses di local scope tersebut atau di scope local dibawahnya (dalam kasus function dalam function)</li>
+    </ul>
+
+    <!-- Kode Global  Scope -->
+    <script>
+        // global scope
+        let counter = 0;
+
+        //global scope
+        function hitMe(){
+            //local scope hitMe
+            counter ++;
+        }
+
+        //global Scope
+        function other(){
+            //local scope other
+        }
+
+        hitMe();
+        hitMe();
+        hitMe();
+
+        console.info(counter)
+
+        function first(){
+            //local scope first
+            let fisrtVariable="First"
+            console.info(fisrtVariable);
+        }
+
+        function seccond(){
+            //local scope seccond
+            let seccondVariable = "Seccond"   // local scope hanya bisa diakses lewat local scope juga
+
+            function seccondNested(){
+                console.info(seccondVariable)
+            }
+            seccondNested()
+            seccondNested()
+        }
+
+        first();
+        seccond()
+
+        //global variable
+        //console.info(fisrtVariable);        // fisrtVariable dan seccondVariable tiadk bisa diakses di  global scope karena berada di local scope
+        //console.info(seccondVariable);
+    </script>
+    <!-- kode nested Function Scope -->
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Parameter</title>
+</head>
+<body>
+    <ul>
+        <h1>Optional Parameter</h1>
+        <li>Secara default parameter di function itu optioanl</li>
+        <li>Artinya kita tidak wajib mengisi value nya ketika memanggil function </li>
+        <li>Jika tidak ada value yang kita kirim ke parameter ketika memamnggil function, maka secara otomatis parameter tersebut bernilai undefiend</li>
+    </ul>
+
+
+    <!-- Kode Optioanl Parameter -->
+    <script>
+        function sayHello(firstName, middleName, lastName){
+            console.info(firstName);
+            console.info(middleName);
+            console.info(lastName);
+        }
+        sayHello();
+        sayHello("Abu");
+        sayHello("Abu","Moko");
+        sayHello("Abu","Moko","Susoso");
+    </script>
+</body>
+</html>

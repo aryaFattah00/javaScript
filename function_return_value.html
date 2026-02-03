@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Return Value</title>
+</head>
+<body>
+    <ul>
+        <h1>Function Return Value</h1>
+        <li>Secara default, function itu tidak menghasilkan value apapun, namun jika kita ingin, kita bisa membuat sebuah function mengembalikan value</li>
+        <li>Agar function bisa menghasilkan value, kita bisa menggunakan kata kunci return di dalam function nya.</li>
+        <li>Dan di dalam block function, untuk menghasilkan nilai tersebut, kita harus menggunakan kata kunci return, lalu diikuti dengan data yang ingin kita hasilkan.</li>
+        <li>Function hanya bisa mengembalikan satu data, jika kita ingin mengembalikan beberapa data sekaligus, kita bisa menggunakan Array sebagai return value nya</li>
+    </ul>
+    <ul>
+        <h1>Menghentikan eksekusi dengan return</h1>
+        <li>Saat kita menggunakan kata kunci retuen, maka kode setelah return tersebut tidak akan muncul</li>
+        <li>Kita bissa menggunakan return untuk menghasilkan eksekusi d=sebuah function</li>
+    </ul>
+
+    <!-- memnuat function dengan parameter dan return value -->
+    <script>
+        function sayHello(firstName, lastName){
+            const say = `Hello ${firstName} ${lastName}`;
+            return say;
+        }
+
+        // memanggil function dan menagkap return value nya
+        const result = sayHello("Abu","Koma");
+        document.writeln(`<p>${result}`);
+    </script>
+
+    <!-- Kode function return value lebih dari satu -->
+     <script>
+        function getFinalScore(value){
+            if (value > 90){
+                return "A";
+            }else if(value >80){
+                return "B";
+            }else if (value >70){
+                return "C";
+            }else if (value >60){
+                return "D";
+            }else{
+                return "E";
+            }
+        }
+
+        const finalValue = getFinalScore(75);
+        document.writeln(`<p> ${finalValue}`)
+     </script>
+
+
+     <!-- kode menghentikan eksekusi dengan return -->
+     <script>
+        function isContains(array, searchValue){
+            for(const element of array){
+                console.info(`Iterasi Elemet ${element}`)
+                if (element === searchValue){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        const array = [1,2,45,67,73,26,87,90,15];
+        const search = 67;
+        const found = isContains(array, search);
+        document.writeln(`<p>${found}`);
+     </script>
+</body>
+</html>

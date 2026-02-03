@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nessted Function</title>
+</head>
+<body>
+    <ul>
+        <h1>Nessted Function atau Function dalam funnction</h1>
+        <li>Tidak ada batasan dimana kita bisa membuat function</li>
+        <li>Termasuk jikakita ingin membuat function didalam sebuah function, jika kita bisa melakukannya </li>
+        <li>Function yang terdapat di dalam, kita sebut inner function</li>
+        <li>Inner functionhanya bisa diakses ditempat kita membuat function nya, tidak bisa diakses dari luar functionnya</li>
+    </ul>
+
+
+    <!-- kode Function dalam Function -->
+    <script>
+        function outer(){
+            function inner(){
+                console.info("inner");
+            }
+            inner();
+            inner();
+        }
+
+        outer();
+        //inner();  //ini error cannot acces inner function
+    </script>
+</body>
+</html>
